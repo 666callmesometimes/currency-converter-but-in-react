@@ -57,7 +57,7 @@ class App extends React.Component{
             <br/>
             USD: <input className={this.state.checkbox ? 'dark' : ''} type="number" id="usd" placeholder="Insert value" value={this.state.valueusd} onChange={this.usdConvert}/>$
             <br/><br/>
-            <input type="checkbox" checked={this.state.checkbox} onClick={this.handleClick} className={'switch'}/>Darkmode/lightmode
+            <label><input type="checkbox" checked={this.state.checkbox} onClick={this.handleClick} className={'switch'}/>Darkmode/lightmode</label>
             </div>
             </>
         );
