@@ -4,7 +4,7 @@ class App extends React.Component{
         valuermb: null,
         valuepln: null,
         valueusd: null,
-        checkbox: sessionStorage.getItem('checkbox') === 'true' ? true : false
+        checkbox: localStorage.getItem('checkbox') === 'true' ? true : false
 
     }
 
@@ -38,11 +38,11 @@ class App extends React.Component{
     handleClick = () => {
         const checkbox = !this.state.checkbox;
         this.setState({ checkbox });
-        sessionStorage.setItem('checkbox', checkbox);
+        localStorage.setItem('checkbox', checkbox);
     }
 
     componentDidMount() {
-        const checkbox = sessionStorage.getItem('checkbox') === 'true' ? true : false;
+        const checkbox = localStorage.getItem('checkbox') === 'true' ? true : false;
         this.setState({ checkbox });
       }
 
