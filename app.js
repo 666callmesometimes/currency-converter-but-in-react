@@ -12,15 +12,15 @@ class App extends React.Component{
 
         this.setState({
             valuermb: e.target.value,
-            valuepln: (e.target.value * 0.63).toFixed(2),
-            valueusd: (e.target.value * 0.15).toFixed(2),
+            valuepln: (e.target.value * 0.60).toFixed(2),
+            valueusd: (e.target.value * 0.14).toFixed(2),
         })
     }
 
     plnConvert = (e) => {
 
         this.setState({
-            valuermb: (e.target.value * 1.61).toFixed(2),
+            valuermb: (e.target.value * 1.66).toFixed(2),
             valuepln: e.target.value,
             valueusd: (e.target.value * 0.23).toFixed(2),
         })
@@ -29,8 +29,8 @@ class App extends React.Component{
     usdConvert = (e) => {
 
         this.setState({
-            valuermb: (e.target.value * 6.88).toFixed(2),
-            valuepln: (e.target.value * 4.29).toFixed(2),
+            valuermb: (e.target.value * 7.31).toFixed(2),
+            valuepln: (e.target.value * 4.41).toFixed(2),
             valueusd: e.target.value,
         })
     }
